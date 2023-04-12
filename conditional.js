@@ -69,27 +69,27 @@ Contoh proses:
 Total pembelian 100000 dan memilih coupon FreeOngkir, maka result: "Total pembelian anda Rp. 90000
  */
 
-var couponCode= "FreeOngkir";
-var price = 100000;
-var total = 0;
+// var couponCode= "FreeOngkir";
+// var price = 100000;
+// var total = 0;
 
-switch(couponCode){
-    case 'FreeOngkir':
-        if(price >= 50000){
-            total = price * 0.9
-        } else if (price >= 30000 && price < 50000){
-            total = price * 0.95
-        } else {
-            total = price * 0.975
-        }
-        break;
-    case 'Free15%':
-        if(price >= 30000){
-            total = price * 0.85
-        } else {
-            total = price
-        }
-    break;
-}
+// switch(couponCode){
+//     case 'FreeOngkir':
+//         if(price >= 50000){
+//             total = price * 0.9
+//         } else if (price >= 30000 && price < 50000){
+//             total = price * 0.95
+//         } else {
+//             total = price * 0.975
+//         }
+//         break;
+//     case 'Free15%':
+//         if(price >= 30000){
+//             total = price * 0.85
+//         } else {
+//             total = price
+//         }
+//     break;
+// }
 
-console.log("Total pembelian " + price + " dan memilih coupon " + couponCode + ", maka result: 'Total pembelian anda Rp.'"+ total+ "'")
+// console.log("Total pembelian " + price + " dan memilih coupon " + couponCode + ", maka result: 'Total pembelian anda Rp.'"+ total+ "'")
