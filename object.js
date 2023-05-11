@@ -22,9 +22,9 @@ var caca = {
       console.log(i + 1 + ". " + this.hobbies[i]);
     }
   },
-  tambahkanHobby: function(hobbyName) {
-    this.hobbies.push(hobbyName)
-  }
+  tambahkanHobby: function (hobbyName) {
+    this.hobbies.push(hobbyName);
+  },
 };
 
 // caca.tambahkanHobby("coding")
@@ -70,7 +70,7 @@ function countVowels(str) {
   console.log(result);
 }
 
-countVowels("buka puasa bersama teman kuliah")
+// countVowels("buka puasa bersama teman kuliah")
 
 // Study Case
 
@@ -106,7 +106,93 @@ function countVotes(arr) {
   console.log(result);
 }
 
-countVotes(["vincent","admin","vincent"])
+// countVotes(["vincent","admin","vincent"])
+
+// Array Of Objeects
+
+var items = [
+  {
+    id: 1,
+    name: "Laptop",
+    price: 15000,
+    isSold: true,
+    tags: ["hardware"],
+  },
+  {
+    id: 2,
+    name: "Gadget",
+    price: 10000,
+    isSold: false,
+    tags: ["hardware"],
+  },
+];
+
+function addItem(name, price) {
+  // menambahkan item
+  var id = items[items.length - 1].id + 1;
+  var isSold = false;
+  var tags = [];
+
+  items.push({
+    id,
+    name,
+    price,
+    isSold,
+    tags,
+  });
+}
+
+function showItems() {
+  // menampilkan items
+  console.log("Item List: ");
+  for (var i = 0; i < items.length; i++) {
+    console.log(items[i].id + ". " + items[i].name + ", Rp. " + items[i].price);
+  }
+}
+
+
+function deleteItem(id){
+    var temp=[]
+    for(var i = 0; i < items.length; i++){
+        if(items[i].id !== id){
+            temp.push(items[i])
+        }
+    }
+    items = [...temp]
+}
+
+function updateItem(id, name, price){
+ var temp = []
+ for(var i = 0; i< items.length; i++){
+    if(items[i].id === id){
+        items[i].name= name;
+        items[i].price = price
+    }
+    temp.push(items[i])
+ }
+ items = [...temp]
+}
+
+function getItemById(id){
+    var item = {}
+    for(var i = 0; i < items.length; i++){
+        if(items[i].id === id){
+            item = items[i]
+        }
+    }
+
+    console.log("Item Detail: ")
+    console.log(item.id + ". " + item.name + ", Rp. " + item.price)
+}
+
+addItem("Keyboard", 500);
+deleteItem(3)
+updateItem(1, "Computer", 35000)
+// showItems();
+
+getItemById(1)
+// console.log(items)
+
 // Study Case
 
 // Buat todo apps
