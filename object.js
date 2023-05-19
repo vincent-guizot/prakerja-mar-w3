@@ -150,47 +150,46 @@ function showItems() {
   }
 }
 
-
-function deleteItem(id){
-    var temp=[]
-    for(var i = 0; i < items.length; i++){
-        if(items[i].id !== id){
-            temp.push(items[i])
-        }
+function deleteItem(id) {
+  var temp = [];
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].id !== id) {
+      temp.push(items[i]);
     }
-    items = [...temp]
+  }
+  items = [...temp];
 }
 
-function updateItem(id, name, price){
- var temp = []
- for(var i = 0; i< items.length; i++){
-    if(items[i].id === id){
-        items[i].name= name;
-        items[i].price = price
+function updateItem(id, name, price) {
+  var temp = [];
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].id === id) {
+      items[i].name = name;
+      items[i].price = price;
     }
-    temp.push(items[i])
- }
- items = [...temp]
+    temp.push(items[i]);
+  }
+  items = [...temp];
 }
 
-function getItemById(id){
-    var item = {}
-    for(var i = 0; i < items.length; i++){
-        if(items[i].id === id){
-            item = items[i]
-        }
+function getItemById(id) {
+  var item = {};
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].id === id) {
+      item = items[i];
     }
+  }
 
-    console.log("Item Detail: ")
-    console.log(item.id + ". " + item.name + ", Rp. " + item.price)
+  console.log("Item Detail: ");
+  console.log(item.id + ". " + item.name + ", Rp. " + item.price);
 }
 
 addItem("Keyboard", 500);
-deleteItem(3)
-updateItem(1, "Computer", 35000)
+deleteItem(3);
+updateItem(1, "Computer", 35000);
 // showItems();
 
-getItemById(1)
+getItemById(1);
 // console.log(items)
 
 // Study Case
