@@ -79,3 +79,50 @@ if (factor === 2) {
 } else {
   console.log(number + " adalah Bukan Bilangan Prima");
 }
+
+/**
+ * Study Case 4
+ *
+ * Hitung hasil dari sebuah angka factorial.
+ * Contoh:
+ *
+ * 5! = 5.4.3.2.1.
+ * Hasilnya 120.
+ *
+ * var num = 5;
+ * Hasil: 120
+ */
+
+var num = 5;
+var faktorial = 1;
+
+for (var i = num; i >= 1; i--) {
+  faktorial = faktorial * i;
+}
+console.log(faktorial);
+
+/**
+ * Study Case 5
+ *
+ * Print segitiga.
+ *
+ * Var num = 5;
+ *
+ * hasil nya:
+ * #
+ * ##
+ * ###
+ * ####
+ * #####
+ *
+ */
+
+var n = 5;
+
+for (var i = 0; i < n; i++) {
+  for (var j = 0; j <= i; j++) {
+    var temp = +"#";
+  }
+  console.log(temp);
+  temp = "";
+}
