@@ -34,10 +34,10 @@ var students = [
 //   }
 // }
 
-// Study Case
+// Study Case 1
 // Hitung jumlah dari semua value / isi array dan cari rata2 nya
 
-// var scores = [5,2,3,1,7,8,10,12,17]
+/*/ var scores = [5,2,3,1,7,8,10,12,17]
 // var total = 0;
 // var average = 0;
 
@@ -46,7 +46,7 @@ var students = [
 // }
 
 // average = total / scores.length
-// console.log(average.toFixed(2))
+*/ console.log(average.toFixed(2))
 
 // Penggunaan .map
 
@@ -87,8 +87,7 @@ var student = {
 }
 
 
-
-// Study Case
+// Study Case 2
 
 /**
  * Pecah semua karakter dalam string menjadi array
@@ -112,3 +111,6 @@ var result1 = []
 for(var i = 0; i < str.length; i++){
   result1.push(str[i])
 }
+
+// Study Case 3
+
