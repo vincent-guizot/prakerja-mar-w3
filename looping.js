@@ -118,10 +118,11 @@ console.log(faktorial);
  */
 
 var n = 5;
+var temp = ""
 
 for (var i = 0; i < n; i++) {
   for (var j = 0; j <= i; j++) {
-    var temp = +"#";
+   temp += "#";
   }
   console.log(temp);
   temp = "";
