@@ -10,7 +10,6 @@
  * Result:
  * 6
  */
-var tests = [];
 function cekJumlahFaktor(num) {
   var faktor = 0;
   for (var i = 1; i <= num; i++) {
@@ -19,10 +18,10 @@ function cekJumlahFaktor(num) {
     }
   }
   return faktor;
-  console.log(tests);
 }
 // console.log(cekJumlahFaktor(12))
-console.log(tests);
+
+// console.log(tests);
 /**
  * Study Case 2
  * Buatlah sebuah function untuk cek apakah bilangan Prima atau tidak.
