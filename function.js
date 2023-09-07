@@ -30,7 +30,7 @@ function cekJumlahFaktor(num) {
  * cekBilanganPrima(19)
  *
  * Result:
- * Bukan Bilangan Prima
+ *  Bilangan Prima
  */
 
 function cekBilanganPrima(num) {

@@ -18,13 +18,13 @@
 // 7 / 3 = 2 sisa 1
 // 7 % 3 = 1
 
-// var num = 2;
+var num = 2;
 
-// if(num % 2 === 0){
-//     console.log(num + " adalah Bilangan Genap")
-// } else {
-//     console.log(num + " adalah Bilangan Ganjil")
-// }
+if(num % 2 === 0){
+    console.log(num + " adalah Bilangan Genap")
+} else {
+    console.log(num + " adalah Bilangan Ganjil")
+}
 
 /**
  * Study Case 2
