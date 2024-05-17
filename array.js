@@ -18,36 +18,40 @@ var students = [
   [3, "admin", 2.1],
 ];
 
-// for (var i = 0; i < students.length; i++) {
-//   if (students[i][2] >= 3.0) {
-//     console.log(
-//       students[i][0] + ". " + students[i][1] + ", IPk: ",
-//       students[i][2]
-//       +", Lulus"
-//     );
-//   } else {
-//     console.log(
-//       students[i][0] + ". " + students[i][1] + ", IPk: ",
-//       students[i][2]
-//       +", Tidak Lulus"
-//     );
-//   }
-// }
+for (var i = 0; i < students.length; i++) {
+  if (students[i][2] >= 3.0) {
+    console.log(
+      students[i][0] + ". " + students[i][1] + ", IPk: ",
+      students[i][2]
+      +", Lulus"
+    );
+  } else {
+    console.log(
+      students[i][0] + ". " + students[i][1] + ", IPk: ",
+      students[i][2]
+      +", Tidak Lulus"
+    );
+  }
+}
 
 // Study Case 1
 // Hitung jumlah dari semua value / isi array dan cari rata2 nya
 
-var scores = [5, 2, 3, 1, 7, 8, 10, 12, 17];
-var total = 0;
-var average = 0;
+/* 
+ * var scores = [5, 2, 3, 1, 7, 8, 10, 12, 17];
+ * var total = 0;
+ * var average = 0;
 
-for (var i = 0; i < scores.length; i++) {
-  total += scores[i];
-}
+ * for (var i = 0; i < scores.length; i++) {
+ *   total += scores[i];
+ * }
 
-average = total / scores.length;
-console.log(average.toFixed(2));
+ * average = total / scores.length;
+ * console.log(average.toFixed(2));
+*/
 
+
+/*
 // Penggunaan .map
 
 // var numbers = [1, 2, 3, 4, 5];
@@ -86,6 +90,8 @@ console.log(average.toFixed(2));
 //   ]
 // }
 
+*/
+
 // Study Case 2
 
 /**
@@ -99,6 +105,7 @@ console.log(average.toFixed(2));
  *
  */
 
+/*
 // Built In Function str.split()
 
 var str = "makan";
@@ -110,5 +117,6 @@ var result1 = [];
 for (var i = 0; i < str.length; i++) {
   result1.push(str[i]);
 }
+*/ 
 
 // Study Case 3

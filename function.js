@@ -19,7 +19,7 @@ function cekJumlahFaktor(num) {
   }
   return faktor;
 }
-// console.log(cekJumlahFaktor(12))
+console.log(cekJumlahFaktor(12))
 
 // console.log(tests);
 /**
@@ -126,4 +126,4 @@ function countXO(str) {
   }
 }
 
-console.log(countXO("xoxoxoxoxoxo"));
+// console.log(countXO("xoxoxoxoxoxo"));

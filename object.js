@@ -30,7 +30,7 @@ var caca = {
 // caca.tambahkanHobby("coding")
 // caca.sebutkanHobby();
 
-// Study Case
+// Study Case 1
 // Tentukan jumlah huruf vokal dalam suatu kalimat
 
 // Contoh: var str = "buka puasa bersama teman kuliah"
@@ -44,7 +44,7 @@ var caca = {
 }
 */
 
-function countVowels(str) {
+function countVowels(str) {k
   var result = {
     a: 0,
     i: 0,
@@ -72,8 +72,7 @@ function countVowels(str) {
 
 // countVowels("buka puasa bersama teman kuliah")
 
-// Study Case
-
+// Study Case 2
 // Tentukan voting atau nama orang nilai bilangan yang sering keluar
 
 /**
@@ -108,7 +107,7 @@ function countVotes(arr) {
 
 // countVotes(["vincent","admin","vincent"])
 
-// Array Of Objeects
+// Array Of Objects
 
 var items = [
   {
