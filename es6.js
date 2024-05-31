@@ -84,7 +84,18 @@ let item = {
 
 let { type, price } = item;
 
-// Study Case: Buat sebuah inventory management
+// Study Case: Buat sebuah inventory management (CRUD)
+
+/**
+ * Buatlah function2  - function berikut:
+ * 
+ * 1. function showCarts
+ * 2. function addItem
+ * 3. function deleteCart
+ * 4. function updateCart
+ * 5. function getCartById
+ */
+
 
 let carts = [
   {

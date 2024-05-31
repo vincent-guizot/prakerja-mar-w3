@@ -10,7 +10,7 @@
  * Result:
  * 6
  */
-function cekJumlahFaktor(num) {
+ function cekJumlahFaktor(num) {
   var faktor = 0;
   for (var i = 1; i <= num; i++) {
     if (num % i === 0) {
