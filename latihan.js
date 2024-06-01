@@ -87,4 +87,57 @@ const convertToBiner = (num) => {
   }
   console.log(result);
 };
-convertToBiner(10);
+// convertToBiner(10);
+
+// Study Case 4
+
+/**
+ * Tentukan apakah ke 3 bilangan merupakan Triple Pythagoras
+ * 
+ * let triples = [3, 4, 5]
+ * 
+ * Result:
+ * true
+ * 
+ * Penjelasan:
+ * Triple pythagorasa adalah kondisi jika seperti berikut:
+ * 3^2 + 4^2 = 5^2
+ * 
+ * */
+
+const triples = (numbers) => {
+    if(numbers[0]**2 + numbers[1] **2 === numbers[2] **2){
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+
+}
+
+// triples([3,4,5])
+
+// Study Case 5
+
+/** 
+ * Tampilkan hasil string sesuai result nya
+ * 
+ * let str = "belajar coding"
+ * 
+ * Result:
+ * BeLaJaR CoDiNg
+ * */
+
+const printString = (str)=> {
+    let result = ''
+    for(let i = 0; i<str.length; i++) {
+        if(i % 2 === 0){
+            result += str[i].toUpperCase()
+        } else {
+            result += str[i]
+        }
+    }
+    
+    console.log(result)
+}
+
+printString("belajar coding")
