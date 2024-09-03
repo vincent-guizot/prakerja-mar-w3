@@ -88,14 +88,13 @@ let { type, price } = item;
 
 /**
  * Buatlah function2  - function berikut:
- * 
+ *
  * 1. function showCarts
  * 2. function addItem
  * 3. function deleteCart
  * 4. function updateCart
  * 5. function getCartById
  */
-
 
 let carts = [
   {
@@ -153,31 +152,31 @@ const addItem = (name, type, price, stock) => {
 };
 
 const getCartById = (id) => {
-    let temp = {}
-    carts.forEach(cart => {
-        if (cart.id === id){
-            temp = cart
-        }
-    })
-    console.log(temp)
-}
+  let temp = {};
+  carts.forEach((cart) => {
+    if (cart.id === id) {
+      temp = cart;
+    }
+  });
+  console.log(temp);
+};
 
-const deleteCart = id => {
-    carts = carts.filter(cart => cart.id !== id)
-}
+const deleteCart = (id) => {
+  carts = carts.filter((cart) => cart.id !== id);
+};
 
-const updateCart = (id,name,type,price,status, stock) => {
-    carts = carts.map(cart => {
-        if(carts.id === id){
-            cart.name= name;
-            cart.type= type;
-            cart.price= price;
-            cart.status = status;
-            cart.stock=stock;
-        }
-        return cart
-    })
-}
+const updateCart = (id, name, type, price, status, stock) => {
+  carts = carts.map((cart) => {
+    if (carts.id === id) {
+      cart.name = name;
+      cart.type = type;
+      cart.price = price;
+      cart.status = status;
+      cart.stock = stock;
+    }
+    return cart;
+  });
+};
 // addItem("Keyboard gaming", "keyboard", 50000, 2);
 // showCarts();
 

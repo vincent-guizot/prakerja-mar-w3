@@ -2,7 +2,7 @@
 
 /**
  * Study Case 1
- * Buat lah sebuah function untuk cek jumlah faktor dari sebuah angka.
+ * Buat lah sebuah function untuk cek jumlah faktor dari sebuah angka.  
  *
  * Contoh:
  * cekJumlahFaktor(12)

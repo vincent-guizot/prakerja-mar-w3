@@ -25,6 +25,7 @@ for (var i = 0; i < students.length; i++) {
       students[i][2]
       +", Lulus"
     );
+    
   } else {
     console.log(
       students[i][0] + ". " + students[i][1] + ", IPk: ",
